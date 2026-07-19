@@ -1,48 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>DiwVerse</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIWVERSE</title>
+
 <style>
-body{
-background:#000;
-color:white;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#050816,#000);
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:40px;
+padding:20px;
 }
-img{
+
+.logo{
 width:180px;
-margin-bottom:20px;
+filter:drop-shadow(0 0 25px #00bfff);
+animation:float 4s ease-in-out infinite;
 }
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
 h1{
-font-size:40px;
-margin:10px;
+font-size:60px;
+margin-top:20px;
+letter-spacing:3px;
 }
+
 p{
-font-size:20px;
-color:#ccc;
+max-width:700px;
+margin-top:15px;
+color:#cfcfcf;
+line-height:1.7;
 }
-.wallet{
-margin-top:30px;
-padding:15px;
-background:#111;
-border-radius:10px;
+
+.btn{
 display:inline-block;
+margin-top:35px;
+padding:15px 35px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#008cff;
+transform:scale(1.05);
+}
+
+section{
+padding:80px 20px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.card{
+background:#10131f;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+border:1px solid #1d2b45;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#050816;
+color:#888;
 }
 </style>
+
 </head>
+
 <body>
 
-<img src="file_00000000a0d881fb8b35c353e1a731e2.png">
+<div class="hero">
+
+<img src="file_00000000a0d881fb8b35c353e1a731e2.png" class="logo">
 
 <h1>DIWVERSE</h1>
 
-<p>Official Website of ORBITER NFT</p>
+<p>
+Where Digital Worlds Begin.<br>
+Home of the ORBITER NFT Collection.
+</p>
 
-<div class="wallet">
-<h3>Wallet ETH</h3>
-<p>0xb0e486768987b0f3368f63d2699aea5cc8001c50</p>
+<a href="#about" class="btn">
+Explore Collection
+</a>
+
 </div>
+
+<section id="about">
+
+<div class="container">
+
+<h2>About DiwVerse</h2>
+
+<div class="card">
+
+<p>
+
+DiwVerse adalah proyek NFT bertema sci-fi dan cyberpunk yang dibangun untuk menghadirkan koleksi digital unik dengan kualitas tinggi.
+
+Koleksi pertama kami adalah <b>ORBITER</b>, sebuah seri karakter penjelajah antariksa futuristik yang menjadi fondasi dunia DiwVerse.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Roadmap</h2>
+
+<div class="card">
+✅ Launch Website
+</div>
+
+<div class="card">
+✅ Launch ORBITER Collection
+</div>
+
+<div class="card">
+🚀 Community Growth
+</div>
+
+<div class="card">
+🎮 Future Game Integration
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 DIWVERSE • All Rights Reserved
+
+</footer>
 
 </body>
 </html>
